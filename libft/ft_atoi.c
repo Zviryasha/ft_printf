@@ -12,10 +12,10 @@
 
 #include "libft.h"
 
-intmax_t		ft_atoi(const char *str)
+int		ft_atoi(const char *str)
 {
 	int		sing;
-	uintmax_t	res;
+	int		res;
 
 	while (*str == ' ' || *str == '\t' || *str == '\n' || *str == '\v'
 			|| *str == '\r' || *str == '\f')

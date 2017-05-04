@@ -11,15 +11,14 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-char	*ft_itoa(long long int n)
+char	*ft_itoa(int n)
 {
-	long long int	num;
+	long	num;
 	char	*str;
 	int		i;
 
-    num = n;
+	num = n;
 	i = 0;
 	if (n < 0)
 		i = 1;
