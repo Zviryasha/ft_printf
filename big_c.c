@@ -6,7 +6,7 @@
 /*   By: opanchen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/22 16:39:00 by opanchen          #+#    #+#             */
-/*   Updated: 2017/04/30 13:12:18 by opanchen         ###   ########.fr       */
+/*   Updated: 2017/05/04 11:57:21 by opanchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,11 @@ int		big_c(wchar_t u, char *d, int *a)
 	if (i[1] <= 7)
 		a[2] = first_c(u, i[0], octet);
 	else if (i[1] <= 11)
-		a[2] = second_c(u, i[0], mask[0], octet);
+		a[2] = se(u, i[0], mask[0], octet);
 	else if (i[1] <= 16)
 		a[2] = third_c(u, i[0], mask[1], octet);
 	else
-		a[2] = fourth_c(u, i[0], mask[2], octet);
+		a[2] = fo(u, i[0], mask[2], octet);
 	free(s);
 	return (a[2]);
 }
@@ -44,7 +44,7 @@ int		first_c(wchar_t u, unsigned int i, unsigned char o)
 	return (1);
 }
 
-int		second_c(wchar_t u, unsigned int i, unsigned int mask1, unsigned char o)
+int		se(wchar_t u, unsigned int i, unsigned int mask1, unsigned char o)
 {
 	unsigned char o2;
 	unsigned char o1;
@@ -76,7 +76,7 @@ int		third_c(wchar_t u, unsigned int i, unsigned int mask2, unsigned char o)
 	return (3);
 }
 
-int		fourth_c(wchar_t u, unsigned int i, unsigned int mask3, unsigned char o)
+int		fo(wchar_t u, unsigned int i, unsigned int mask3, unsigned char o)
 {
 	unsigned char o4;
 	unsigned char o3;

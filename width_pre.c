@@ -6,7 +6,7 @@
 /*   By: opanchen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/29 16:19:13 by opanchen          #+#    #+#             */
-/*   Updated: 2017/04/29 16:26:01 by opanchen         ###   ########.fr       */
+/*   Updated: 2017/05/04 11:32:15 by opanchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ char	*precision(char *s, intmax_t u, char *p)
 	int		k;
 	char	*t;
 
-	k = ft_atoi(s);
+	k = ft_atoi_f(s);
 	i = 0;
 	if (u < 0)
 		k++;
@@ -72,7 +72,7 @@ char	*precision(char *s, intmax_t u, char *p)
 		p[i] = '0';
 		i++;
 	}
-	t = ft_itoa(u);
+	t = ft_itoa_f(u);
 	vision(&i, p, t, &k);
 	return (p);
 }

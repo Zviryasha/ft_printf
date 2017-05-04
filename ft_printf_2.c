@@ -6,7 +6,7 @@
 /*   By: opanchen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/30 13:55:17 by opanchen          #+#    #+#             */
-/*   Updated: 2017/05/04 10:39:33 by opanchen         ###   ########.fr       */
+/*   Updated: 2017/05/04 11:51:40 by opanchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ void	next_u(char *d, int *okjs, uintmax_t i)
 {
 	okjs[0] = check_precision(d);
 	okjs[2] = check_width(d);
-	okjs[1] = ft_strlen(ft_itoa(i));
+	okjs[1] = ft_strlen(ft_itoa_f(i));
 }
 
 int		uio(char *d, unsigned long long int i, char c, int *a)
